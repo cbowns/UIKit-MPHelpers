@@ -1,11 +1,20 @@
 //
-//  UIImage+MPImageNamedNilCheck.m
+//  UIKit+MPHelpers.m
 //
 //  Created by Christopher Bowns on 5/6/12.
 //  Copyright (c) 2012 Mechanical Pants Software. All rights reserved.
 //
 
-#import "UIImage+MPImageNamedNilCheck.h"
+#import "UIKit+MPHelpers.h"
+
+@implementation UIColor (MPColorRenaming)
+
++ (UIColor *)greyColor;
+{
+	return [UIColor grayColor];
+}
+
+@end
 
 @implementation UIImage (MPImageNamedNilCheck)
 
